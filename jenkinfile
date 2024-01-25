@@ -7,9 +7,6 @@ pipeline{
 	}
 
 	stage('build'){
-		//Maven or Gradle
-		mvn clean package
-	
 	}
 	stage('test'){
 	mvn test
