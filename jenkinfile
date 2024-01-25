@@ -1,0 +1,24 @@
+pipeline{
+	agent any
+
+    stage{
+    	stage('checkout'){
+	git checkout
+	}
+
+	stage('build'){
+		//Maven or Gradle
+		mvn clean package
+	
+	}
+	stage('test'){
+	mvn test
+
+	}
+	stage('scan'){
+
+	}
+	stage('artifactory'){
+	}
+      }
+    }
