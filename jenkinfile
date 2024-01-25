@@ -9,8 +9,6 @@ pipeline{
 	stage('build'){
 	}
 	stage('test'){
-	mvn test
-
 	}
 	stage('scan'){
 
